@@ -37,7 +37,7 @@ func Example() {
 	markdown.NewMarkdown(os.Stdout).
 		H2("Sequence Diagram").
 		CodeBlocks(markdown.SyntaxHighlightMermaid, diagram).
-		Build()
+		Build() // nolint:errcheck
 
 	// Output:
 	// ## Sequence Diagram

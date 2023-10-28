@@ -36,7 +36,7 @@ func main() {
 		LoopEnd().
 		LF().
 		SyncResponse("Naohiro", "Viktoriya", "wake up, wake up").
-		String()
+		String() // nolint:errcheck
 
 	markdown.NewMarkdown(f).
 		H2("Sequence Diagram").

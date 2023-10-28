@@ -27,14 +27,14 @@ Additionally, complex code that increases the complexity of the library, such as
 - [x] sync / async response
 - [x] loop
 - [x] alt / else / opt
-- [x] parrallel
+- [x] parallel
 - [x] break
 - [x] critical
 - [x] group
 
 ## Example
 ### Basic usage
-Generate mermaid in markdown.
+Generate mermaid in markdown. You can generate mermaid using go generate. Please define code to generate Mermaid first. Then, run "go generate ./..." to generate it.
 
 ```go
 package main
@@ -76,7 +76,7 @@ func main() {
 }
 ```
 
-Output: [markdown is here](./doc/generated.md)
+Plain text output: [markdown is here](./doc/generated.md)
 ````
 ## Sequence Diagram
 ```mermaid
@@ -101,7 +101,27 @@ sequenceDiagram
 ```
 ````
 
-You can generate mermaid using go generate. Please define code to generate Mermaid first. Then, run "go generate ./..." to generate it.
+Mermaid output:
+```mermaid
+sequenceDiagram
+    participant Viktoriya
+    participant Naohiro
+    participant Naoyuki
+
+    Viktoriya->>Naohiro: Please wake up Naoyuki
+    Naohiro-->>Viktoriya: OK
+
+    loop until Naoyuki wake up
+    Naohiro->>Naoyuki: Wake up!
+    Naoyuki-->>Naohiro: zzz
+    Naohiro->>Naoyuki: Hey!!!
+    break if Naoyuki wake up
+    Naoyuki-->>Naohiro: ......
+    end
+    end
+
+    Naohiro-->>Viktoriya: wake up, wake up
+```
 
 ## Contribution
 First off, thanks for taking the time to contribute! Contributions are not only related to development. For example, GitHub Star motivates me to develop! Please feel free to contribute to this project.

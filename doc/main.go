@@ -19,23 +19,23 @@ func main() {
 	}
 
 	diagram := sequence.NewDiagram(os.Stdout).
-		Participant("Viktoriya").
-		Participant("Naohiro").
-		Participant("Naoyuki").
+		Participant("Sophia").
+		Participant("David").
+		Participant("Subaru").
 		LF().
-		SyncRequest("Viktoriya", "Naohiro", "Please wake up Naoyuki").
-		SyncResponse("Naohiro", "Viktoriya", "OK").
+		SyncRequest("Sophia", "David", "Please wake up Subaru").
+		SyncResponse("David", "Sophia", "OK").
 		LF().
-		LoopStart("until Naoyuki wake up").
-		SyncRequest("Naohiro", "Naoyuki", "Wake up!").
-		SyncResponse("Naoyuki", "Naohiro", "zzz").
-		SyncRequest("Naohiro", "Naoyuki", "Hey!!!").
-		BreakStart("if Naoyuki wake up").
-		SyncResponse("Naoyuki", "Naohiro", "......").
+		LoopStart("until Subaru wake up").
+		SyncRequest("David", "Subaru", "Wake up!").
+		SyncResponse("Subaru", "David", "zzz").
+		SyncRequest("David", "Subaru", "Hey!!!").
+		BreakStart("if Subaru wake up").
+		SyncResponse("Subaru", "David", "......").
 		BreakEnd().
 		LoopEnd().
 		LF().
-		SyncResponse("Naohiro", "Viktoriya", "wake up, wake up").
+		SyncResponse("David", "Sophia", "wake up, wake up").
 		String() //nolint
 
 	err = markdown.NewMarkdown(f).

@@ -1,21 +1,21 @@
 ## Sequence Diagram
 ```mermaid
 sequenceDiagram
-    participant Viktoriya
-    participant Naohiro
-    participant Naoyuki
+    participant Sophia
+    participant David
+    participant Subaru
 
-    Viktoriya->>Naohiro: Please wake up Naoyuki
-    Naohiro-->>Viktoriya: OK
+    Sophia->>David: Please wake up Subaru
+    David-->>Sophia: OK
 
-    loop until Naoyuki wake up
-    Naohiro->>Naoyuki: Wake up!
-    Naoyuki-->>Naohiro: zzz
-    Naohiro->>Naoyuki: Hey!!!
-    break if Naoyuki wake up
-    Naoyuki-->>Naohiro: ......
+    loop until Subaru wake up
+    David->>Subaru: Wake up!
+    Subaru-->>David: zzz
+    David->>Subaru: Hey!!!
+    break if Subaru wake up
+    Subaru-->>David: ......
     end
     end
 
-    Naohiro-->>Viktoriya: wake up, wake up
+    David-->>Sophia: wake up, wake up
 ```

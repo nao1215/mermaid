@@ -50,23 +50,23 @@ import (
 
 func main() {
 	diagram := sequence.NewDiagram(os.Stdout).
-		Participant("Viktoriya").
-		Participant("Naohiro").
-		Participant("Naoyuki").
+		Participant("Sophia").
+		Participant("David").
+		Participant("Subaru").
 		LF().
-		SyncRequest("Viktoriya", "Naohiro", "Please wake up Naoyuki").
-		SyncResponse("Naohiro", "Viktoriya", "OK").
+		SyncRequest("Sophia", "David", "Please wake up Subaru").
+		SyncResponse("David", "Sophia", "OK").
 		LF().
-		LoopStart("until Naoyuki wake up").
-		SyncRequest("Naohiro", "Naoyuki", "Wake up!").
-		SyncResponse("Naoyuki", "Naohiro", "zzz").
-		SyncRequest("Naohiro", "Naoyuki", "Hey!!!").
-		BreakStart("if Naoyuki wake up").
-		SyncResponse("Naoyuki", "Naohiro", "......").
+		LoopStart("until Subaru wake up").
+		SyncRequest("David", "Subaru", "Wake up!").
+		SyncResponse("Subaru", "David", "zzz").
+		SyncRequest("David", "Subaru", "Hey!!!").
+		BreakStart("if Subaru wake up").
+		SyncResponse("Subaru", "David", "......").
 		BreakEnd().
 		LoopEnd().
 		LF().
-		SyncResponse("Naohiro", "Viktoriya", "wake up, wake up").
+		SyncResponse("David", "Sophia", "wake up, wake up").
 		String()
 
 	markdown.NewMarkdown(os.Stdout).
@@ -81,46 +81,46 @@ Plain text output: [markdown is here](./doc/generated.md)
 ## Sequence Diagram
 ```mermaid
 sequenceDiagram
-    participant Viktoriya
-    participant Naohiro
-    participant Naoyuki
+    participant Sophia
+    participant David
+    participant Subaru
 
-    Viktoriya->>Naohiro: Please wake up Naoyuki
-    Naohiro-->>Viktoriya: OK
+    Sophia->>David: Please wake up Subaru
+    David-->>Sophia: OK
 
-    loop until Naoyuki wake up
-    Naohiro->>Naoyuki: Wake up!
-    Naoyuki-->>Naohiro: zzz
-    Naohiro->>Naoyuki: Hey!!!
-    break if Naoyuki wake up
-    Naoyuki-->>Naohiro: ......
+    loop until Subaru wake up
+    David->>Subaru: Wake up!
+    Subaru-->>David: zzz
+    David->>Subaru: Hey!!!
+    break if Subaru wake up
+    Subaru-->>David: ......
     end
     end
 
-    Naohiro-->>Viktoriya: wake up, wake up
+    David-->>Sophia: wake up, wake up
 ```
 ````
 
 Mermaid output:
 ```mermaid
 sequenceDiagram
-    participant Viktoriya
-    participant Naohiro
-    participant Naoyuki
+    participant Sophia
+    participant David
+    participant Subaru
 
-    Viktoriya->>Naohiro: Please wake up Naoyuki
-    Naohiro-->>Viktoriya: OK
+    Sophia->>David: Please wake up Subaru
+    David-->>Sophia: OK
 
-    loop until Naoyuki wake up
-    Naohiro->>Naoyuki: Wake up!
-    Naoyuki-->>Naohiro: zzz
-    Naohiro->>Naoyuki: Hey!!!
-    break if Naoyuki wake up
-    Naoyuki-->>Naohiro: ......
+    loop until Subaru wake up
+    David->>Subaru: Wake up!
+    Subaru-->>David: zzz
+    David->>Subaru: Hey!!!
+    break if Subaru wake up
+    Subaru-->>David: ......
     end
     end
 
-    Naohiro-->>Viktoriya: wake up, wake up
+    David-->>Sophia: wake up, wake up
 ```
 
 ## Contribution

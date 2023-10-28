@@ -122,6 +122,11 @@ func (d *Diagram) AsyncResponsef(from, to, format string, args ...any) *Diagram 
 	return d.AsyncResponse(from, to, fmt.Sprintf(format, args...))
 }
 
+func (d *Diagram) LF() *Diagram {
+	d.body = append(d.body, "")
+	return d
+}
+
 // lineFeed return line feed for current OS.
 func lineFeed() string {
 	if runtime.GOOS == "windows" {

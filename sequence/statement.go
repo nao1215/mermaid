@@ -12,7 +12,7 @@ func (d *Diagram) LoopStart(description string) *Diagram {
 
 // LoopEnd add a loop to the sequence diagram.
 func (d *Diagram) LoopEnd() *Diagram {
-	d.body = append(d.body, fmt.Sprintf("    end"))
+	d.body = append(d.body, "    end")
 	return d
 }
 
@@ -30,7 +30,7 @@ func (d *Diagram) AltElse(description string) *Diagram {
 
 // AltEnd add a alt to the sequence diagram.
 func (d *Diagram) AltEnd() *Diagram {
-	d.body = append(d.body, fmt.Sprintf("    end"))
+	d.body = append(d.body, "    end")
 	return d
 }
 
@@ -42,7 +42,7 @@ func (d *Diagram) OptStart(description string) *Diagram {
 
 // OptEnd add a opt to the sequence diagram.
 func (d *Diagram) OptEnd() *Diagram {
-	d.body = append(d.body, fmt.Sprintf("    end"))
+	d.body = append(d.body, "    end")
 	return d
 }
 
@@ -60,7 +60,7 @@ func (d *Diagram) ParallelAnd(description string) *Diagram {
 
 // ParallelEnd add a parallel to the sequence diagram.
 func (d *Diagram) ParallelEnd() *Diagram {
-	d.body = append(d.body, fmt.Sprintf("    end"))
+	d.body = append(d.body, "    end")
 	return d
 }
 
@@ -78,7 +78,7 @@ func (d *Diagram) CriticalOption(description string) *Diagram {
 
 // CriticalEnd add a critical to the sequence diagram.
 func (d *Diagram) CriticalEnd() *Diagram {
-	d.body = append(d.body, fmt.Sprintf("    end"))
+	d.body = append(d.body, "    end")
 	return d
 }
 
@@ -90,6 +90,6 @@ func (d *Diagram) BreakStart(description string) *Diagram {
 
 // BreakEnd add a break to the sequence diagram.
 func (d *Diagram) BreakEnd() *Diagram {
-	d.body = append(d.body, fmt.Sprintf("    end"))
+	d.body = append(d.body, "    end")
 	return d
 }

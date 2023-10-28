@@ -7,7 +7,7 @@ import (
 
 // AutoNumber add auto number to the sequence diagram.
 func (d *Diagram) AutoNumber() *Diagram {
-	d.body = append(d.body, fmt.Sprintf("    autonumber"))
+	d.body = append(d.body, "    autonumber")
 	return d
 }
 
@@ -19,7 +19,7 @@ func (d *Diagram) BoxStart(participant []string) *Diagram {
 
 // BoxEnd add a box to the sequence diagram.
 func (d *Diagram) BoxEnd() *Diagram {
-	d.body = append(d.body, fmt.Sprintf("    end"))
+	d.body = append(d.body, "    end")
 	return d
 }
 

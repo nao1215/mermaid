@@ -49,7 +49,7 @@ func (d *Diagram) Error() error {
 func (d *Diagram) Build() error {
 	if _, err := fmt.Fprint(d.dest, d.String()); err != nil {
 		if d.err != nil {
-			return fmt.Errorf("failed to write markdown text: %w: %s", err, d.err) //nolint:wrapcheck
+			return fmt.Errorf("failed to write markdown text: %w: %s", err, d.err.Error()) //nolint:wrapcheck
 		}
 		return fmt.Errorf("failed to write markdown text: %w", err)
 	}

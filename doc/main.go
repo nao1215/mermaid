@@ -38,8 +38,12 @@ func main() {
 		SyncResponse("Naohiro", "Viktoriya", "wake up, wake up").
 		String() //nolint
 
-	markdown.NewMarkdown(f).
+	err = markdown.NewMarkdown(f).
 		H2("Sequence Diagram").
 		CodeBlocks(markdown.SyntaxHighlightMermaid, diagram).
-		Build() //nolint
+		Build()
+
+	if err != nil {
+		panic(err)
+	}
 }

@@ -4,6 +4,7 @@
 [![WindowsUnitTest](https://github.com/go-spectest/mermaid/actions/workflows/windows_test.yml/badge.svg)](https://github.com/go-spectest/mermaid/actions/workflows/windows_test.yml)
 [![reviewdog](https://github.com/go-spectest/mermaid/actions/workflows/reviewdog.yml/badge.svg)](https://github.com/go-spectest/mermaid/actions/workflows/reviewdog.yml)
 [![Gosec](https://github.com/go-spectest/mermaid/actions/workflows/gosec.yml/badge.svg)](https://github.com/go-spectest/mermaid/actions/workflows/gosec.yml)
+![Coverage](https://raw.githubusercontent.com/go-spectest/octocovs-central-repo/main/badges/go-spectest/mermaid/coverage.svg)
 # What is mermaid package
 The Package mermaid is a simple mermaid builder in golang. This library assembles mermaid using method chaining, not uses a template engine like [html/template](https://pkg.go.dev/html/template). Currently, this library supports only sequence diagram. 
   

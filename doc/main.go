@@ -36,10 +36,10 @@ func main() {
 		LoopEnd().
 		LF().
 		SyncResponse("Naohiro", "Viktoriya", "wake up, wake up").
-		String() // nolint:errcheck
+		String() //nolint
 
 	markdown.NewMarkdown(f).
 		H2("Sequence Diagram").
 		CodeBlocks(markdown.SyntaxHighlightMermaid, diagram).
-		Build() // nolint:errcheck
+		Build() //nolint
 }

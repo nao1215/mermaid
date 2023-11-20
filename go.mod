@@ -3,7 +3,7 @@ module github.com/go-spectest/mermaid
 go 1.18
 
 require (
-	github.com/go-spectest/markdown v0.0.6
+	github.com/go-spectest/markdown v0.0.7
 	github.com/google/go-cmp v0.6.0
 )
 

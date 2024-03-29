@@ -6,8 +6,8 @@ package main
 import (
 	"os"
 
-	"github.com/go-spectest/markdown"
-	"github.com/go-spectest/mermaid/sequence"
+	"github.com/nao1215/markdown"
+	"github.com/nao1215/mermaid/sequence"
 )
 
 //go:generate go run main.go

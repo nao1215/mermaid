@@ -1,10 +1,10 @@
-module github.com/go-spectest/mermaid
+module github.com/nao1215/mermaid
 
 go 1.18
 
 require (
-	github.com/go-spectest/markdown v0.0.6
 	github.com/google/go-cmp v0.6.0
+	github.com/nao1215/markdown v0.0.8
 )
 
 require (

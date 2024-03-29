@@ -5,8 +5,8 @@ package markdown_test
 import (
 	"os"
 
-	"github.com/go-spectest/markdown"
-	"github.com/go-spectest/mermaid/sequence"
+	"github.com/nao1215/markdown"
+	"github.com/nao1215/mermaid/sequence"
 )
 
 // Examle is example code. Skip this test on Windows.

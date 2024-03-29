@@ -1,14 +1,14 @@
-[![Go Reference](https://pkg.go.dev/badge/github.com/go-spectest/mermaid.svg)](https://pkg.go.dev/github.com/go-spectest/mermaid)
-[![LinuxUnitTest](https://github.com/go-spectest/mermaid/actions/workflows/linux_test.yml/badge.svg)](https://github.com/go-spectest/mermaid/actions/workflows/linux_test.yml)
-[![MacUnitTest](https://github.com/go-spectest/mermaid/actions/workflows/mac_test.yml/badge.svg)](https://github.com/go-spectest/mermaid/actions/workflows/mac_test.yml)
-[![WindowsUnitTest](https://github.com/go-spectest/mermaid/actions/workflows/windows_test.yml/badge.svg)](https://github.com/go-spectest/mermaid/actions/workflows/windows_test.yml)
-[![reviewdog](https://github.com/go-spectest/mermaid/actions/workflows/reviewdog.yml/badge.svg)](https://github.com/go-spectest/mermaid/actions/workflows/reviewdog.yml)
-[![Gosec](https://github.com/go-spectest/mermaid/actions/workflows/gosec.yml/badge.svg)](https://github.com/go-spectest/mermaid/actions/workflows/gosec.yml)
-![Coverage](https://raw.githubusercontent.com/go-spectest/octocovs-central-repo/main/badges/go-spectest/mermaid/coverage.svg)
+[![Go Reference](https://pkg.go.dev/badge/github.com/nao1215/mermaid.svg)](https://pkg.go.dev/github.com/nao1215/mermaid)
+[![LinuxUnitTest](https://github.com/nao1215/mermaid/actions/workflows/linux_test.yml/badge.svg)](https://github.com/nao1215/mermaid/actions/workflows/linux_test.yml)
+[![MacUnitTest](https://github.com/nao1215/mermaid/actions/workflows/mac_test.yml/badge.svg)](https://github.com/nao1215/mermaid/actions/workflows/mac_test.yml)
+[![WindowsUnitTest](https://github.com/nao1215/mermaid/actions/workflows/windows_test.yml/badge.svg)](https://github.com/nao1215/mermaid/actions/workflows/windows_test.yml)
+[![reviewdog](https://github.com/nao1215/mermaid/actions/workflows/reviewdog.yml/badge.svg)](https://github.com/nao1215/mermaid/actions/workflows/reviewdog.yml)
+[![Gosec](https://github.com/nao1215/mermaid/actions/workflows/gosec.yml/badge.svg)](https://github.com/nao1215/mermaid/actions/workflows/gosec.yml)
+![Coverage](https://raw.githubusercontent.com/nao1215/octocovs-central-repo/main/badges/nao1215/mermaid/coverage.svg)
 # What is mermaid package
 The Package mermaid is a simple mermaid builder in golang. This library assembles mermaid using method chaining, not uses a template engine like [html/template](https://pkg.go.dev/html/template). Currently, this library supports only sequence diagram. 
   
-This library was initially developed to display test results in [go-spectest/spectest](https://github.com/go-spectest/spectest). Therefore, it implements the features required by spectest, but there are no plans to add additional functionalities unless requested by someone. This library is intended to be used in conjunction with [go-spectest/markdown](https://github.com/go-spectest/markdown).
+This library was initially developed to display test results in [nao1215/spectest](https://github.com/nao1215/spectest). Therefore, it implements the features required by spectest, but there are no plans to add additional functionalities unless requested by someone. This library is intended to be used in conjunction with [nao1215/markdown](https://github.com/nao1215/markdown).
   
 Additionally, complex code that increases the complexity of the library, such as generating nested lists, will not be added. I want to keep this library as simple as possible.
   
@@ -43,8 +43,8 @@ package main
 import (
 	"os"
 
-	"github.com/go-spectest/markdown"
-	"github.com/go-spectest/mermaid/sequence"
+	"github.com/nao1215/markdown"
+	"github.com/nao1215/mermaid/sequence"
 )
 
 //go:generate go run main.go

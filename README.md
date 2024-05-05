@@ -5,6 +5,9 @@
 [![reviewdog](https://github.com/nao1215/mermaid/actions/workflows/reviewdog.yml/badge.svg)](https://github.com/nao1215/mermaid/actions/workflows/reviewdog.yml)
 [![Gosec](https://github.com/nao1215/mermaid/actions/workflows/gosec.yml/badge.svg)](https://github.com/nao1215/mermaid/actions/workflows/gosec.yml)
 ![Coverage](https://raw.githubusercontent.com/nao1215/octocovs-central-repo/main/badges/nao1215/mermaid/coverage.svg)
+
+**This repository has been merged into [nao1215/markdown](https://github.com/nao1215/markdown).**
+
 # What is mermaid package
 The Package mermaid is a simple mermaid builder in golang. This library assembles mermaid using method chaining, not uses a template engine like [html/template](https://pkg.go.dev/html/template). Currently, this library supports only sequence diagram. 
   
